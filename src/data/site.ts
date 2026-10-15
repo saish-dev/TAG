@@ -45,21 +45,59 @@ export const heroSlides: { name: string; tone: Tone; image: string }[] = [
   { name: "Diwali", tone: "gold", image: "/images/tag-10.jpg" },
 ];
 
-export const collections = [
+/* One story per piece. Descriptions and "perfect for" lists come from the studio's Instagram captions. */
+export const collections: {
+  name: string; color: string; tone: Tone; image: string; kind: string; story: string; perfectFor: string[];
+}[] = [
   {
-    name: "Goan Reverie", color: "#2F4E9E", tone: "blue" as Tone, image: "/images/tag-01.jpg", kind: "Goan wedding",
-    story: "Blue lace florals and pearls, inspired by old Goan houses. The invite frames the couple in embroidery, and the hamper repeats the blue in ceramics and ribbon.",
-    parts: ["Lace invite", "Tile favour box", "Ceramic hamper"],
+    name: "Goan Reverie", color: "#2F4E9E", tone: "blue", image: "/images/tag-01.jpg", kind: "Wedding invite",
+    story: "An invitation with timeless charm. Inspired by elegant blue florals and classic detailing, it is made for couples who want their wedding invitation to be as special as the celebration itself.",
+    perfectFor: ["Wedding invitations"],
   },
   {
-    name: "The Forever Invite", color: "#7A1F26", tone: "red" as Tone, image: "/images/tag-02.jpg", kind: "Couple-personalised",
-    story: "A deep oxblood board with a pearl strand and a small polaroid of the couple. Tied with a ribbon so the invite opens like a keepsake.",
-    parts: ["Polaroid invite", "Pearl favour", "Ribbon sleeve"],
+    name: "The Forever Invite", color: "#7A1F26", tone: "red", image: "/images/tag-02.jpg", kind: "Personalised invite",
+    story: "A love story, beautifully told. A deep oxblood board with a pearl strand and a small polaroid of the couple, tied with a ribbon so the invite opens like a keepsake.",
+    perfectFor: ["Weddings", "Anniversaries", "Intimate weddings"],
   },
   {
-    name: "Shringar", color: "#2F6B3F", tone: "green" as Tone, image: "/images/tag-06.jpg", kind: "Bridal trousseau",
-    story: "A tan leather basket lined with a Banarasi saree, bangles and flowers. Made for the bride’s side, packed in emerald and gold.",
-    parts: ["Leather basket", "Saree wrap", "Bangle set"],
+    name: "The Amalfi Invite", color: "#B58A3A", tone: "gold", image: "/images/tag-03.jpg", kind: "Handbag-style invite",
+    story: "An invitation with a little something extra. Inspired by the Amalfi Coast, this handbag-style invite opens to a personalised invitation and a thoughtful little gift tucked inside.",
+    perfectFor: ["Wedding invites & save-the-dates", "Bridal party invites", "Destination weddings", "Invites paired with a keepsake"],
+  },
+  {
+    name: "Mini Chocoquet", color: "#A8742A", tone: "gold", image: "/images/tag-04.jpg", kind: "Favour",
+    story: "An adorable chocolate bouquet that makes the smallest gestures feel extra special: a chocolate in a paper cone, finished with a ribbon and a sprig of flowers.",
+    perfectFor: ["Haldi, Mehendi & Sangeet favours", "Wedding guest favours", "Welcome gifts", "Bridesmaid proposals"],
+  },
+  {
+    name: "Alma de Goa", color: "#3F63B8", tone: "blue", image: "/images/tag-05.jpg", kind: "Hamper · The Soul of Goa",
+    story: "A little piece of Goa, wrapped with love. Inspired by Goa’s heritage, Portuguese charm and the warmth of its traditions, in a wooden crate with blue-and-white ceramics.",
+    perfectFor: ["Wedding invites & ceremonies", "Welcome & bridesmaid gifts", "Return favours", "Baby showers & birthdays"],
+  },
+  {
+    name: "Shringar", color: "#2F6B3F", tone: "green", image: "/images/tag-06.jpg", kind: "Hamper",
+    story: "A thoughtfully curated hamper for occasions that carry generations of tradition, love and blessings: a tan leather basket with a saree, bangles and flowers, customised to your occasion and budget.",
+    perfectFor: ["Weddings", "Shagun", "New beginnings", "House warming", "Festive return gifts"],
+  },
+  {
+    name: "A Basket of Sunshine", color: "#C9A227", tone: "gold", image: "/images/tag-07.jpg", kind: "Hamper",
+    story: "A cheerful little hamper designed to make your sweetest moments even more special. Thoughtfully curated, beautifully presented and customisable to make every gift feel personal.",
+    perfectFor: ["Birthdays & special surprises", "Housewarmings & new beginnings", "Bachelorette parties"],
+  },
+  {
+    name: "Corporate", color: "#7A5A9A", tone: "plum", image: "/images/tag-08.jpg", kind: "Corporate hampers",
+    story: "Because corporate gifting doesn’t have to mean boring. Hampers for the people who matter to your business, built around your team, your client and your budget.",
+    perfectFor: ["Welcome hampers", "Festive hampers", "Client gifting", "Employee rewards", "Team celebrations"],
+  },
+  {
+    name: "Pretty in Pink", color: "#C43C6A", tone: "red", image: "/images/tag-09.jpg", kind: "Hamper",
+    story: "Pretty in pink, with a little lace and a whole lot of love. A pink hamper filled with thoughtful touches and adorable details for the girls who deserve a little extra sparkle.",
+    perfectFor: ["Birthday surprises", "Bachelorette parties", "Bridesmaid proposals", "Girls’ get-togethers"],
+  },
+  {
+    name: "Diwali", color: "#8A5A1E", tone: "gold", image: "/images/tag-10.jpg", kind: "Festive hamper",
+    story: "This Diwali, gift a little more than just a hamper. Gift a feeling: curated with festive charm and timeless traditions in a velvet box with diyas and sweets.",
+    perfectFor: ["Diwali gifting", "Festive gifting"],
   },
 ];
 

@@ -122,3 +122,5 @@ footer .big{font-family:var(--display);font-size:2.2rem;line-height:1.1;color:va
 button.stage{display:block;width:100%;background:none;color:inherit;font:inherit}
 .ph img{object-fit:cover}
 .ph.has-img::before{display:none}
+.chip.tag{cursor:default}
+.chip.tag:hover{border-color:var(--line)}
